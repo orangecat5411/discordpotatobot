@@ -66,7 +66,7 @@ async def on_message(message):
 
     if random.random() < 0.05:
         reply, potato_counter = generate_potato_message(potato_counter)
-        await message.channel.send(reply)
+        await message.reply(reply)
 
     await bot.process_commands(message)
 
