@@ -9,7 +9,7 @@ load_dotenv()
 intents = discord.Intents.default()
 intents.messages = True
 intents.message_content = True
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(command_prefix=">", intents=intents)
 
 potato_counter = 0
 
@@ -74,25 +74,25 @@ async def on_message(message):
 async def reset_counter(ctx):
     global potato_counter
     potato_counter = 0
-    await ctx.send("The potato counter has been reset to 0!")
+    await ctx.reply("The potato counter has been reset to 0!")
 
 @bot.command()
 async def add_potatoes(ctx, amount: int):
     global potato_counter
     potato_counter += amount
-    await ctx.send(f"Added {amount} potatoes. Total is now {potato_counter}.")
+    await ctx.reply(f"Added {amount} potatoes. Total is now {potato_counter}.")
 
 @bot.command()
 async def subtract_potatoes(ctx, amount: int):
     global potato_counter
     potato_counter -= amount
-    await ctx.send(f"Subtracted {amount} potatoes. Total is now {potato_counter}.")
+    await ctx.reply(f"Subtracted {amount} potatoes. Total is now {potato_counter}.")
 
 @bot.command()
 async def set_potatoes(ctx, amount: int):
     global potato_counter
     potato_counter = amount
-    await ctx.send(f"Set the potato counter to {potato_counter}.")
+    await ctx.reply(f"Set the potato counter to {potato_counter}.")
 
 
 bot.run(str(os.getenv("DISCORD_TOKEN")))
