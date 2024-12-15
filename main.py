@@ -1,6 +1,10 @@
 import discord
 from discord.ext import commands
 import random
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 intents = discord.Intents.default()
 intents.messages = True
@@ -91,4 +95,4 @@ async def set_potatoes(ctx, amount: int):
     await ctx.send(f"Set the potato counter to {potato_counter}.")
 
 
-bot.run('MTMxNjI3NzEzNzk3MTM1MTY0Mg.GbvVdz.whNs_NpXPGll2ho1xXG-JbdS7HKQRb5RGYYtsQ')
+bot.run(str(os.getenv("DISCORD_TOKEN")))
