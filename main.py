@@ -96,3 +96,4 @@ async def set_potatoes(ctx, amount: int):
 
 
 bot.run(str(os.getenv("DISCORD_TOKEN")))
+#hasd
