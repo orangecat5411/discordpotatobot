@@ -2,14 +2,14 @@
 
 PotatoBot is a fun and interactive Discord bot that keeps track of a virtual potato counter while generating unique, random potato-related messages. With a quirky sense of humor, it replies to 5% of user messages and adds or subtracts potatoes from the counter based on randomly generated events. Users can also manage the potato counter through specific commands.
 
-Examples of sent messages:
+**Examples of sent messages:**
 
 ![image](https://github.com/user-attachments/assets/2024176a-3467-45f4-9289-a0cf346c3ae5)
 ![image](https://github.com/user-attachments/assets/5b32672e-7773-438e-a35e-5dd347026292)
 
 
 
-Features:
+**Features:**
 
 - Random Potato Adventures: Generates unique potato-related messages with a variety of actions and outcomes, ensuring no two messages are alike.
 - Dynamic Counter Management: Tracks a global potato counter that adjusts with gains or losses from bot interactions.
